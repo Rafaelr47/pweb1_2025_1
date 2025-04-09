@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Formulário Matricula de Curso</b></legend> <br>
+            <label for="pnome">Primeiro nome:</label><br>
+            <input type="text" id="pnome" name="pnome"><br>
+            <label for="snome">Sobrenome</label><br>
+            <input type="text" id="snome" name="snome"> <br> <br>
+
+            <b>Curso:</b> <br>
+            <input type="radio" id="TI" name="curso" value="TI">
+            <label for="TI">Técnico em Informática</label><br>
+            <input type="radio" id="gds" name="curso" value="gds">
+            <label for="gds">Graduação - Análise e Desenvolvimento de Sistemas</label><br>
+            <input type="radio" id="pweb" name="curso" value="pweb">
+            <label for="pweb">Profissionalizante - Programação Web</label> <br><br>
+
+            <b>Linguagens de programação de sua preferência:</b> <br>
+            <input type="checkbox" id="PHP" name="PHP" value="PHP">
+            <label for="PHP"> PHP</label><br>
+            <input type="checkbox" id="JAVA" name="JAVA" value="JAVA">
+            <label for="JAVA"> Java </label><br>
+            <input type="checkbox" id="Python" name="Python" value="Python">
+            <label for="Python"> Python </label> <br> <br>
+
+            <label for="turnos"><b>Escolha um turno:</b></label> <br>
+            <select name="turnos" id="turnos">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select> <br> <br>
+            
+            <label for="unidade"><b>Escolha uma unidade mais próxima a você:</b></label> <br>
+            <input list="unidades" name="unidade" id="unidade">
+            <datalist id="unidades">
+            <option value="Chapecó">
+            <option value="Xanxere">
+            </datalist> <br><br>
+            
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

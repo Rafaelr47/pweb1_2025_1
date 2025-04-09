@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Sistema de Gestão Acadêmica</b></legend> <br>
+            <b>Manutenção de Usuários do Sistema Interno</b> <br><br>
+            <label for="login">Login:</label><br>
+            <input type="text" id="login" name="login"><br>
+            <label for="senha">Senha:</label><br>
+            <input type="text" id="senha" name="senha"><br><br>
+
+            <label for="status"><b>Status:</b></label> <br>
+            <select name="status" id="status">
+                <option value="inativo">Inativo</option>
+                <option value="ativo">Ativo</option>
+            </select> <br> <br>
+
+            <b>Tipo:</b> <br>
+            <input type="radio" id="Tec" name="tipo" value="Tec">
+            <label for="Tec">Técnico</label>
+            <input type="radio" id="Prof" name="tipo" value="Prof">
+            <label for="Prof">Professor</label>
+            <input type="radio" id="aluno" name="tipo" value="aluno">
+            <label for="aluno">Aluno</label> <br> <br>
+
+            <b>Data Criação:</b> <br>
+            <input type="date" id="data" name="data"> <br> <br>
+            
+            <b>Perfil:</b> <br>
+            <input type="radio" id="cvd" name="perfil" value="cvd">
+            <label for="cvd">Convidado</label>
+            <input type="radio" id="adm" name="perfil" value="adm">
+            <label for="adm">Administrador</label> <br> <br>
+
+            <b>Observações:</b> <br>
+            <textarea id="obs" name="obs" rows="5" cols="40">
+            </textarea> <br>
+
+            <b>Módulos:</b> <br>
+            <input type="checkbox" id="cmp" name="cmp" value="cmp"> 
+            <label for="cmp"> Compras</label>
+            <input type="checkbox" id="bib" name="bib" value="bib">
+            <label for="bib"> Biblioteca </label>
+            <input type="checkbox" id="acd" name="acd" value="acd">
+            <label for="acd"> Acadêmico </label> <br>
+            <input type="checkbox" id="doc" name="doc" value="doc">
+            <label for="doc"> Documentação </label>
+            <input type="checkbox" id="rh" name="rh" value="rh">
+            <label for="rh"> Recursos Humanos </label> <br> <br>
+            
+            <button type="submit">Salvar</button>
+            <button type="reset">Excluir</button>
+        </fieldset>
+    </form>
+</body>
+</html>

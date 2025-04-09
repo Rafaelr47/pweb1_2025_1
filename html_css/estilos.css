@@ -1,0 +1,54 @@
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    height: 150px;
+    text-align: center;
+    width: 75%; 
+    margin-left: 12.5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid black;
+}
+
+.conteudo {
+    display: flex;  
+    justify-content: space-between;  
+    margin: 20px auto;
+    width: 100%; 
+}
+
+aside {
+    margin-top: 10px;
+    border: 4px solid black;
+    padding: 10px;
+    width: 25%;  
+    height: 500px;
+}
+
+.main {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 4px solid black;
+    padding: 10px;
+    width: 50%; 
+}
+
+.gameplay {
+    height: 320px;
+    width: 100%;
+}
+.godofwar {
+    height: 500px;
+    width: 100%;  
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    width: 100%; 
+    border: 4px solid black;
+}
