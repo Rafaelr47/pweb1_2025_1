@@ -3,3 +3,23 @@
     border-bottom: 1px solid #e5e5e5;
 
 }
+
+.blog-pagination{
+    margin-bottom: 4rem;
+}
+
+.blog-pagination > btn{
+    border-radius: 4rem;
+}
+
+.blog-footer{
+    padding: 3.5rem 3;
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
