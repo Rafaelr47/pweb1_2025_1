@@ -49,6 +49,8 @@ class db
     }
 
     public function store($dados){
+
+        unset($dados['id']);
         $conn = $this->conn();
 
         $sql = "INSERT INTO $this->table_name (";
@@ -83,6 +85,7 @@ class db
     public function update($dados)
     {
         $id = $dados['id'];
+
         $conn = $this->conn();
         
         $sql = "UPDATE $this->table_name SET ";
