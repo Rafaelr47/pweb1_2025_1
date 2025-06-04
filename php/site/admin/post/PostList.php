@@ -1,5 +1,5 @@
 <?php
-    include "./db.class.php"
+    include "../db.class.php"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <title>Formulario de Usuário</title>
+    <title>Formulario de Post</title>
 </head>
 
 <?php  
-$db = new db('usuario');
+$db = new db('post');
 
 if(!empty($_GET['id'])) {
     $db->destroy($_GET['id']);
@@ -32,7 +32,7 @@ if (!empty($_POST)) {
         <div class="row">
             <h3>Listagem Usuário</h3>
 
-            <form action="./UsuarioList.php" method="post">
+            <form action="./PostList.php" method="post">
 
                 <div class="row">
                     <div class="col-md-2">
@@ -51,7 +51,7 @@ if (!empty($_POST)) {
                     <div class="row">
                         <div class="col mt-4">
                             <button type="submit" class="btn btn-primary">Buscar</button>
-                            <a href="./UsuarioForm.php" class="btn btn-secondary">Cadastrar</a>
+                            <a href="./PostForm.php" class="btn btn-secondary">Cadastrar</a>
                         </div>
                     </div>
             </form>
@@ -80,11 +80,11 @@ if (!empty($_POST)) {
                                 <td>$item->telefone</td>
                                 <td>$item->email</td>
                                 <td>
-                                <a href='./UsuarioForm.php?id=$item->id'>Editar</a>
+                                <a href='./PostForm.php?id=$item->id'>Editar</a>
                                 </td>
                                 <td>
                                     <a onclick='return confirm(\"Deseja Excluir?\")' 
-                                    href='./UsuarioList.php?id=$item->id'>Deletar</a>
+                                    href='./PostList.php?id=$item->id'>Deletar</a>
                                 </td>
                             </tr>
                             ";

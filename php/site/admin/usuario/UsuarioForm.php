@@ -1,18 +1,9 @@
 <?php
-    include "./db.class.php"
-?>
-<!DOCTYPE html>
-<html lang="en">
+    include "../db.class.php";
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-        <title>Formulario de Usuário</title>
-    </head>
+    include_once "../header.php";
 
-    <?php  
+
 
         $db = new db('usuario');
         $data = null;
@@ -74,10 +65,7 @@
         */
     ?>
 
-    <body>
 
-        <div class="container mt-5">
-            <div class="row">
 
                 <?php if(!empty($errors)) { ?>
                     <div class="alert alert-danger">
@@ -136,6 +124,7 @@
                         </div>
                     </div>
                 </form>
+<<<<<<< HEAD:php/site/admin/UsuarioForm.php
             </div>
         </div>
         
@@ -146,3 +135,8 @@
     </body>
 
 </html>
+=======
+            <?php
+            include_once "../footer.php";
+            ?>
+>>>>>>> 8a01d8b (Alteration php):php/site/admin/usuario/UsuarioForm.php
