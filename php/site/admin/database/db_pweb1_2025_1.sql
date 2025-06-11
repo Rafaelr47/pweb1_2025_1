@@ -54,10 +54,10 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Copiando dados para a tabela db_pweb1_2025_1.usuario: ~2 rows (aproximadamente)
-INSERT INTO `categoria` (`id`, `nome`) VALUES
-	(1, 'Esporte'),
-	(2, 'Política'),
-	(3, 'Gerais'),
+INSERT INTO `categoria` (`nome`) VALUES
+	('Esporte'),
+	('Política'),
+	('Gerais')
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
